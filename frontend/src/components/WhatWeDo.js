@@ -1,5 +1,5 @@
 import React from "react";
-import { Bot, FileText, MessageSquare, Phone, Link, Mail, Code, Zap } from "lucide-react";
+import { Bot, FileText, MessageSquare, Phone, Link, Mail, Code, Zap, Building2 } from "lucide-react";
 
 const WhatWeDo = () => {
   const tools = [

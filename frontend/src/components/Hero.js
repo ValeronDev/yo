@@ -36,7 +36,7 @@ const Hero = () => {
           {/* Subheading */}
           <p className="text-lg md:text-xl text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
             Transform your workflow with cutting-edge AI automations and plug-and-play software solutions. 
-            Built for creators, startups, and small teams who want to scale efficiently.
+            Built for creators, startups, and teams who want to scale efficiently.
           </p>
 
           {/* CTA Buttons */}

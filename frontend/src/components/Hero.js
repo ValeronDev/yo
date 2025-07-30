@@ -67,10 +67,10 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <Users className="w-6 h-6 text-accent-blue mr-2" />
-                <span className="text-2xl font-bold text-text-primary">100+</span>
+                <Bot className="w-6 h-6 text-accent-blue mr-2" />
+                <span className="text-2xl font-bold text-text-primary">$45K</span>
               </div>
-              <p className="text-text-muted text-sm">Happy Clients</p>
+              <p className="text-text-muted text-sm">Average Company Savings</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">

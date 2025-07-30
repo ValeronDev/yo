@@ -97,7 +97,7 @@ const WhatWeDo = () => {
                   {tool.description}
                 </p>
                 <div className="text-sm text-text-muted mb-4">
-                  <strong className="text-accent-blue">For:</strong> {tool.forText}
+                  <strong className="text-accent-blue">For:</strong> {tool.targetAudience}
                 </div>
               </div>
 

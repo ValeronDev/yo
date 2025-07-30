@@ -47,7 +47,7 @@ const AutomationTools = () => {
       title: "AI Sales Call Review Bot",
       targetAudience: "Sales teams, call centers, B2B, real estate, insurance",
       description: "Transcribes & summarizes calls. Detects objections, buying signals, competitors. Scores performance, syncs with HubSpot, Salesforce.",
-      pricing: "$1,300/month + $2,400 setup fee",
+      pricing: "$1,500/month + $2,400 setup fee",
       averageSavings: "$9,000/month",
       equivalentStaff: "1 sales ops analyst"
     },

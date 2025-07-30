@@ -5,13 +5,12 @@ import {
   MessageSquare, 
   Phone, 
   Link, 
-  Mail,
   Building2,
   Zap,
   CheckCircle,
-  Users,
   DollarSign,
-  TrendingUp
+  TrendingUp,
+  Users
 } from "lucide-react";
 
 const AutomationTools = () => {
@@ -19,56 +18,56 @@ const AutomationTools = () => {
     {
       icon: <FileText className="w-8 h-8 text-accent-blue" />,
       title: "SOP Bot",
-      targetAudience: "Operations teams, process-heavy businesses (logistics, agencies), scaling startups",
-      description: "Generates SOPs from task input, voice, or screen recordings. Keeps documentation current as processes evolve.",
-      pricing: "$899/month + $2,500 setup",
-      averageSavings: "$8,500/month",
-      equivalentStaff: "1 process documentation specialist"
+      targetAudience: "Operations teams, process-heavy businesses, scaling startups",
+      description: "Generates SOPs from task input, voice, or screen recordings. Keeps documentation up-to-date as processes evolve. Simplifies onboarding and compliance.",
+      pricing: "$200/month + $400 setup fee",
+      averageSavings: "$2,000/month",
+      equivalentStaff: "1 operations manager"
     },
     {
       icon: <Bot className="w-8 h-8 text-accent-blue" />,
       title: "AI Content Creation Bot",
-      targetAudience: "Marketing teams, content agencies, e-commerce, SaaS",
-      description: "Generates blogs, social media posts, product copy, and emails. Matches brand tone and is SEO-optimized.",
-      pricing: "$1,299/month + $3,000 setup",
-      averageSavings: "$12,500/month",
-      equivalentStaff: "2 content writers + 0.5 SEO specialist"
+      targetAudience: "Marketing teams, content agencies, e-comm & SaaS",
+      description: "Generates blogs, social posts, emails, product copy. Matches brand tone. SEO-optimized, multi-language.",
+      pricing: "$1,500/month + $2,500 setup fee",
+      averageSavings: "$10,000/month",
+      equivalentStaff: "2 copywriters"
     },
     {
       icon: <MessageSquare className="w-8 h-8 text-accent-blue" />,
       title: "AI Customer Service Bot",
-      targetAudience: "eCommerce stores, SaaS companies, high-volume support teams",
-      description: "24/7 AI replies via chat, email, and social. Integrates with support platforms and escalates with full context.",
-      pricing: "$1,599/month + $4,000 setup",
-      averageSavings: "$18,000/month",
+      targetAudience: "eCommerce, SaaS, support-heavy businesses",
+      description: "24/7 replies via chat, email, social. Integrates with Zendesk, Intercom, etc. Escalates with full ticket context.",
+      pricing: "$2,500/month + $5,000 setup fee",
+      averageSavings: "$15,000/month",
       equivalentStaff: "3 support agents"
     },
     {
       icon: <Phone className="w-8 h-8 text-accent-blue" />,
       title: "AI Sales Call Review Bot",
-      targetAudience: "Sales teams, revenue ops, B2B SaaS, insurance, real estate",
-      description: "Transcribes and summarizes sales calls. Detects objections, buying signals, and scores rep performance.",
-      pricing: "$999/month + $2,800 setup",
-      averageSavings: "$9,500/month",
-      equivalentStaff: "1 sales analyst + 0.5 sales ops specialist"
+      targetAudience: "Sales teams, call centers, B2B, real estate, insurance",
+      description: "Transcribes & summarizes calls. Detects objections, buying signals, competitors. Scores performance, syncs with HubSpot, Salesforce.",
+      pricing: "$1,300/month + $2,400 setup fee",
+      averageSavings: "$9,000/month",
+      equivalentStaff: "1 sales ops analyst"
     },
     {
       icon: <Link className="w-8 h-8 text-accent-blue" />,
       title: "AI Automation & Integration Bot",
-      targetAudience: "Teams using multiple SaaS tools (Notion, Slack, CRMs, Airtable)",
-      description: "AI-driven cross-platform workflows. Connects APIs and automates triggers/actions with no-code logic builder.",
-      pricing: "$1,799/month + $5,000 setup",
-      averageSavings: "$15,500/month",
-      equivalentStaff: "1.5 automation specialists + 1 integration developer"
+      targetAudience: "SaaS-heavy teams, ops managers, non-technical leads",
+      description: "Automates workflows across tools (Notion, Slack, CRMs). Connects APIs, custom logic, no-code interface. Eliminates repetitive tasks.",
+      pricing: "$1,800/month + $3,000 setup fee",
+      averageSavings: "$12,000/month",
+      equivalentStaff: "2 technical operations staff"
     },
     {
       icon: <Building2 className="w-8 h-8 text-accent-blue" />,
-      title: "Enterprise Custom Projects",
-      targetAudience: "Large organizations with specific automation needs",
-      description: "Tailored AI solutions designed for your unique business processes and requirements. Full consultation and custom development.",
-      pricing: "Custom Quote + Setup",
-      averageSavings: "$50,000+/month",
-      equivalentStaff: "Variable based on project scope"
+      title: "Enterprise – Custom AI Projects",
+      targetAudience: "Companies needing advanced, custom-built automations",
+      description: "Built-to-spec AI agents and workflow systems. Bespoke UI, logic, and integrations. Dedicated support team.",
+      pricing: "Custom Quote",
+      averageSavings: "Varies",
+      equivalentStaff: "Flexible per scope"
     }
   ];
 
@@ -169,7 +168,7 @@ const AutomationTools = () => {
               Bundle & Save
             </h2>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              Combine our automation tools and save more over time.
+              Combine tools and reduce setup cost. Built for high-output teams.
             </p>
           </div>
 

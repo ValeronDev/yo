@@ -57,7 +57,7 @@ const WhatWeDo = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-            Six AI Tools That Transform Your Workflow
+            Our AI Tools
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
             From operations to sales, customer service to content creation — 

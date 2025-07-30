@@ -50,10 +50,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-dark-secondary/30">
+    <section id="contact" className="py-20 lg:py-32 bg-bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-dark-secondary border border-border-subtle mb-8">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-bg-tertiary border border-border-primary mb-8">
             <Mail className="w-4 h-4 text-accent-blue mr-2" />
             <span className="text-sm font-medium text-text-secondary">Get In Touch</span>
           </div>

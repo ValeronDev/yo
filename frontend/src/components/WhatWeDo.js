@@ -76,40 +76,6 @@ const WhatWeDo = () => {
             our specialized AI bots handle the work so you can focus on growth.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {tools.map((tool, index) => (
-            <div
-              key={index}
-              className="feature-card bg-bg-secondary border border-border-primary rounded-2xl p-8 hover:transform hover:-translate-y-2 hover:border-accent-blue hover:shadow-xl hover:shadow-accent-blue/10 transition-all duration-300 group relative overflow-hidden"
-            >
-              {/* Top accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-accent-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
-              <div className="mb-6">
-                <div className="w-16 h-16 rounded-xl bg-bg-tertiary flex items-center justify-center mb-4 group-hover:bg-accent-blue/10 transition-colors duration-300">
-                  {tool.icon}
-                </div>
-                <h3 className="text-xl font-bold text-text-primary mb-3">
-                  {tool.title}
-                </h3>
-                <p className="text-text-secondary leading-relaxed mb-4">
-                  {tool.description}
-                </p>
-                <div className="text-sm text-text-muted mb-4">
-                  <strong className="text-accent-blue">For:</strong> {tool.targetAudience}
-                </div>
-              </div>
-
-              <div className="mt-6 pt-6 border-t border-border-primary">
-                <button className="text-accent-blue font-medium hover:text-accent-blue-hover transition-colors group/btn">
-                  Learn More
-                  <MessageSquare className="w-4 h-4 ml-2 inline group-hover/btn:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

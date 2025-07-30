@@ -74,13 +74,13 @@ const AutomationTools = () => {
   const bundleOptions = [
     {
       title: "Any 3 Automations",
-      price: "$3,800/month + $7,000 setup",
+      price: "$2,800/month + $5,000 setup",
       savings: "Save 15% vs individual pricing",
       features: ["Choose any 3 tools", "Priority support", "Monthly strategy calls"]
     },
     {
       title: "All 5 Automations",
-      price: "$7,500/month + $12,000 setup",
+      price: "$6,500/month + $11,000 setup",
       savings: "Save 25% vs individual pricing",
       features: ["All automation tools", "Dedicated success manager", "Custom integrations included"],
       popular: true

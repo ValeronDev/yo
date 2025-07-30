@@ -101,7 +101,7 @@ const AutomationTools = () => {
   };
 
   return (
-    <section id="automation-tools" className="py-20 lg:py-32">
+    <section id="automation-tools" className="pb-20 lg:pb-32">
       <div className="container mx-auto px-6">
         {/* Automation Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">

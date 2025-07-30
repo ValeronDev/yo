@@ -195,7 +195,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary mb-1">Visit us</h4>
-                    <p className="text-text-secondary">San Francisco, CA</p>
+                    <p className="text-text-secondary">Montreal, QC</p>
                     <p className="text-text-muted text-sm mt-1">By appointment only</p>
                   </div>
                 </div>

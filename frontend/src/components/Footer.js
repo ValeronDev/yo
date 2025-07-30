@@ -55,16 +55,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#what-we-do" className="text-text-secondary hover:text-accent-blue transition-colors text-sm">
-                  Plug-and-Play Software
-                </a>
-              </li>
-              <li>
-                <a href="#what-we-do" className="text-text-secondary hover:text-accent-blue transition-colors text-sm">
-                  GPT Workflows
-                </a>
-              </li>
-              <li>
                 <a href="#automations" className="text-text-secondary hover:text-accent-blue transition-colors text-sm">
                   Custom Solutions
                 </a>

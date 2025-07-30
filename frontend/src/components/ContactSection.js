@@ -69,7 +69,7 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="bg-dark-secondary border border-border-subtle rounded-2xl p-8">
+          <div className="bg-bg-primary border border-border-primary rounded-2xl p-8">
             <h3 className="text-2xl font-semibold text-text-primary mb-6">
               Send us a message
             </h3>
@@ -87,7 +87,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="input-field w-full bg-dark-tertiary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200"
+                    className="input-field w-full bg-bg-secondary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200"
                     placeholder="John Doe"
                   />
                 </div>
@@ -102,7 +102,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="input-field w-full bg-dark-tertiary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200"
+                    className="input-field w-full bg-bg-secondary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -118,7 +118,7 @@ const ContactSection = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="input-field w-full bg-dark-tertiary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200"
+                  className="input-field w-full bg-bg-secondary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200"
                   placeholder="Your Company"
                 />
               </div>
@@ -134,7 +134,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="input-field w-full bg-dark-tertiary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200 resize-none"
+                  className="input-field w-full bg-bg-secondary border-2 border-border-primary rounded-lg px-4 py-3 text-text-primary placeholder-text-muted focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/10 transition-all duration-200 resize-none"
                   placeholder="Tell us about your automation needs..."
                 />
               </div>

@@ -161,14 +161,14 @@ const ContactSection = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="bg-dark-secondary border border-border-subtle rounded-2xl p-8">
+            <div className="bg-bg-primary border border-border-primary rounded-2xl p-8">
               <h3 className="text-2xl font-semibold text-text-primary mb-6">
                 Get in touch
               </h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-lg bg-dark-tertiary flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-bg-tertiary flex items-center justify-center mr-4 flex-shrink-0">
                     <Mail className="w-5 h-5 text-accent-blue" />
                   </div>
                   <div>
@@ -179,7 +179,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-lg bg-dark-tertiary flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-bg-tertiary flex items-center justify-center mr-4 flex-shrink-0">
                     <Phone className="w-5 h-5 text-accent-blue" />
                   </div>
                   <div>
@@ -190,7 +190,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-lg bg-dark-tertiary flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-bg-tertiary flex items-center justify-center mr-4 flex-shrink-0">
                     <MapPin className="w-5 h-5 text-accent-blue" />
                   </div>
                   <div>
@@ -203,7 +203,7 @@ const ContactSection = () => {
             </div>
 
             {/* Quick Benefits */}
-            <div className="bg-dark-secondary border border-border-subtle rounded-2xl p-8">
+            <div className="bg-bg-primary border border-border-primary rounded-2xl p-8">
               <h4 className="font-semibold text-text-primary mb-4">Why choose Valeron?</h4>
               <div className="space-y-3">
                 <div className="flex items-center">

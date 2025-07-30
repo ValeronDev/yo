@@ -101,15 +101,6 @@ const WhatWeDo = () => {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                {tool.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-center">
-                    <Zap className="w-4 h-4 text-accent-blue mr-3 flex-shrink-0" />
-                    <span className="text-sm text-text-muted">{feature}</span>
-                  </div>
-                ))}
-              </div>
-
               <div className="mt-6 pt-6 border-t border-border-primary">
                 <button className="text-accent-blue font-medium hover:text-accent-blue-hover transition-colors group/btn">
                   Learn More

@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-dark-primary/95 backdrop-blur-sm border-b border-border-subtle">
+    <header className="sticky top-0 z-50 bg-bg-primary/95 backdrop-blur-sm border-b border-border-primary">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -31,13 +31,13 @@ const Header = () => {
               onClick={() => scrollToSection("what-we-do")}
               className="text-text-secondary hover:text-accent-blue transition-colors duration-200"
             >
-              Services
+              Tools
             </button>
             <button
-              onClick={() => scrollToSection("automations")}
+              onClick={() => scrollToSection("high-leverage-teams")}
               className="text-text-secondary hover:text-accent-blue transition-colors duration-200"
             >
-              Automations
+              Clients
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -64,19 +64,19 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border-subtle pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-border-primary pt-4">
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection("what-we-do")}
                 className="text-text-secondary hover:text-accent-blue transition-colors text-left"
               >
-                Services
+                Tools
               </button>
               <button
-                onClick={() => scrollToSection("automations")}
+                onClick={() => scrollToSection("high-leverage-teams")}
                 className="text-text-secondary hover:text-accent-blue transition-colors text-left"
               >
-                Automations
+                Clients
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

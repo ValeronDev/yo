@@ -18,8 +18,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-text-secondary mb-6 max-w-md leading-relaxed">
-              Transform your business with cutting-edge AI automations and plug-and-play software solutions. 
-              Built for creators, startups, and small teams who want to scale efficiently.
+              Transform your workflow with cutting-edge AI automations and plug-and-play software solutions. 
+              Built for creators, startups, and teams who want to scale efficiently.
             </p>
             
             {/* Social Links */}

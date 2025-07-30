@@ -184,7 +184,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary mb-1">Call us</h4>
-                    <p className="text-text-secondary">+1 (555) 123-4567</p>
+                    <p className="text-text-secondary">+1 (514) 349-6658</p>
                     <p className="text-text-muted text-sm mt-1">Mon-Fri 9AM-6PM EST</p>
                   </div>
                 </div>

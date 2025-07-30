@@ -60,7 +60,7 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section id="what-we-do" className="pt-2 pb-2 bg-bg-secondary">
+    <section id="what-we-do" className="pt-2 bg-bg-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-bg-tertiary border border-border-primary mb-8">

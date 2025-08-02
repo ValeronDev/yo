@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { 
   FileText, 
   Bot, 
   MessageSquare, 
   Phone, 
-  Link, 
+  Link as LinkIcon, 
   Building2,
   Zap,
   CheckCircle,

@@ -19,7 +19,7 @@ const AutomationTools = () => {
       icon: <FileText className="w-8 h-8 text-accent-blue" />,
       title: "SOP Bot",
       targetAudience: "Operations teams, process-heavy businesses, scaling startups",
-      description: "Generates SOPs from task input, voice, or screen recordings. Keeps documentation up-to-date as processes evolve. Simplifies onboarding and compliance.",
+      description: "Provides employees with real-time answers to operational questions by referencing your internal SOPs. Reduces manager interruptions, speeds up onboarding, and ensures compliance across departments.",
       pricing: "$200/month + $400 setup fee",
       averageSavings: "$2,000/month",
       equivalentStaff: "1 operations manager"

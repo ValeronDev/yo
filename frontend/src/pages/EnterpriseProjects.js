@@ -23,10 +23,10 @@ const EnterpriseProjects = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-              Enterprise – Custom AI Projects
+              AI Integration Automator
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-              Every company uses dozens of tools — but they rarely talk to each other. We build seamless automations using custom workflows tailored to your operations.
+              Your business. Your tools. Your workflows — automated, your way.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

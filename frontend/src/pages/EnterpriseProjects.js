@@ -77,7 +77,7 @@ const EnterpriseProjects = () => {
                   <div className="w-16 h-16 rounded-full bg-accent-blue/10 flex items-center justify-center mx-auto mb-4">
                     <Building2 className="w-8 h-8 text-accent-blue" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-primary">Custom Integration Suite</h3>
+                  <h3 className="text-xl font-bold text-text-primary">Custom Integration Infrastructure</h3>
                 </div>
                 
                 <div className="space-y-4">

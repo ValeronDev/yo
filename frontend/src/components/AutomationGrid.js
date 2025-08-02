@@ -53,9 +53,9 @@ const AutomationTools = () => {
     },
     {
       icon: <Link className="w-8 h-8 text-accent-blue" />,
-      title: "AI Automation & Integration Bot",
-      targetAudience: "SaaS-heavy teams, ops managers, non-technical leads",
-      description: "Automates workflows across tools (Notion, Slack, CRMs). Connects APIs, custom logic, no-code interface. Eliminates repetitive tasks.",
+      title: "AI Hiring Assistant Bot",
+      targetAudience: "HR teams, recruiters, growing startups",
+      description: "Screens resumes, conducts AI interviews, scores candidates, and recommends top fits — all integrated into your ATS. Greatly reduces time-to-hire and bias in early-stage screening.",
       pricing: "$1,800/month + $3,000 setup fee",
       averageSavings: "$12,000/month",
       equivalentStaff: "2 technical operations staff"

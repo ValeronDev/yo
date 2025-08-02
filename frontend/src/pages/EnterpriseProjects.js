@@ -62,7 +62,7 @@ const EnterpriseProjects = () => {
                   Every business runs on a stack of tools — but most of them don't talk to each other. That's where the AI Integration Automator comes in. We design and build fully customized automations tailored to your company's specific operations, systems, and branding.
                 </p>
                 <p className="text-lg text-text-secondary mb-6">
-                  Using platforms like n8n, Make, or custom APIs, we connect the dots between your favorite tools — Slack, Notion, CRMs, Stripe, Google Sheets, and more — to eliminate manual tasks and streamline your operations.
+                  Using custom APIs and advanced integration platforms, we connect the dots between your favorite tools — Slack, Notion, CRMs, Stripe, Google Sheets, and more — to eliminate manual tasks and streamline your operations.
                 </p>
                 <p className="text-lg text-text-secondary mb-6">
                   We'll suggest proven automation flows (like syncing CRMs with calendars, sending auto-generated reports, or assigning tasks from forms), but you're not limited to templates. You tell us what your team needs — and we'll build it, fully customized with the logic, tone, and even visual design that fits your company.

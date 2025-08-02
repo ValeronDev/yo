@@ -89,12 +89,12 @@ const Footer = () => {
               © {currentYear} Valeron. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-text-muted hover:text-accent-blue transition-colors text-sm">
+              <Link to="/privacy-policy" className="text-text-muted hover:text-accent-blue transition-colors text-sm">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-text-muted hover:text-accent-blue transition-colors text-sm">
+              </Link>
+              <Link to="/terms-of-service" className="text-text-muted hover:text-accent-blue transition-colors text-sm">
                 Terms of Service
-              </a>
+              </Link>
               <a href="#" className="text-text-muted hover:text-accent-blue transition-colors text-sm">
                 Cookie Policy
               </a>

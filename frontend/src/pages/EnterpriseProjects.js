@@ -23,7 +23,7 @@ const EnterpriseProjects = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-              AI Integration Automator
+              Custom Enterprise AI Integrations
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
               Your business. Your tools. Your workflows — automated, your way.

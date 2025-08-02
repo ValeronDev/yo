@@ -2,6 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
+import Tools from "./pages/Tools";
+import Clients from "./pages/Clients";
+import Contact from "./pages/Contact";
 import SOPBot from "./pages/SOPBot";
 import ContentCreationBot from "./pages/ContentCreationBot";
 import CustomerServiceBot from "./pages/CustomerServiceBot";
@@ -17,6 +20,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/sop-bot" element={<SOPBot />} />
           <Route path="/content-creation-bot" element={<ContentCreationBot />} />
           <Route path="/customer-service-bot" element={<CustomerServiceBot />} />

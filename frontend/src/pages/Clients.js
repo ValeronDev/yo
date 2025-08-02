@@ -86,9 +86,11 @@ const Clients = () => {
                       <h2 className="text-2xl font-bold text-text-primary mb-4">
                         {client.name}
                       </h2>
-                      <span className="flex items-center px-3 py-1 rounded-full bg-accent-blue/10 text-accent-blue text-sm font-semibold mb-4 w-fit">
-                        {client.industry}
-                      </span>
+                      <div className="mb-4">
+                        <span className="inline-block px-3 py-1 rounded-full bg-accent-blue/10 text-accent-blue text-sm font-semibold">
+                          {client.industry}
+                        </span>
+                      </div>
                       <h3 className="text-xl font-bold text-accent-blue">
                         {client.solution}
                       </h3>

@@ -92,13 +92,15 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <Link
-                to="/contact"
+              <a
+                href="https://calendly.com/valeron-info/integration-call"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
                 className="btn-primary w-full py-3 text-sm font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 text-center"
               >
                 Get Started
-              </Link>
+              </a>
             </div>
           </nav>
         )}

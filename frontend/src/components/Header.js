@@ -34,10 +34,10 @@ const Header = () => {
               Tools
             </button>
             <button
-              onClick={() => scrollToSection("automation-tools")}
+              onClick={() => scrollToSection("bundle-save")}
               className="text-text-secondary hover:text-accent-blue transition-colors duration-200"
             >
-              Clients
+              Bundles
             </button>
             <button
               onClick={() => scrollToSection("contact")}

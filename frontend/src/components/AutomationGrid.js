@@ -156,7 +156,7 @@ const AutomationTools = () => {
                   to={tool.link}
                   className="w-full bg-accent-blue text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-accent-blue-hover transition-colors duration-200 inline-block text-center"
                 >
-                  Get Started
+                  More Info
                 </Link>
               </div>
             </div>

@@ -1,10 +1,14 @@
-import React from "react";
-import { ArrowLeft, CheckCircle, Link, Users, DollarSign, TrendingUp } from "lucide-react";
-import { Link as RouterLink } from "react-router-dom";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Users, CheckCircle, TrendingUp, Clock, Shield, Target } from "lucide-react";
 
 const HiringAssistantBot = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-bg-primary">
       <Header />
@@ -12,134 +16,227 @@ const HiringAssistantBot = () => {
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <RouterLink to="/" className="inline-flex items-center text-accent-blue hover:text-accent-blue-hover mb-8 transition-colors">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </RouterLink>
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-bg-tertiary border border-border-primary mb-8">
+              <Users className="w-4 h-4 text-accent-blue mr-2" />
+              <span className="text-sm font-medium text-text-secondary">Recruitment Automation</span>
+            </div>
             
-            <div className="text-center mb-16">
-              <div className="w-20 h-20 rounded-2xl bg-bg-secondary flex items-center justify-center mx-auto mb-6">
-                <Link className="w-10 h-10 text-accent-blue" />
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-text-primary mb-6">
-                AI Hiring Assistant Bot
-              </h1>
-              <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-8">
-                Screens resumes, conducts AI interviews, scores candidates, and recommends top fits — all integrated into your ATS. Greatly reduces time-to-hire and bias in early-stage screening.
-              </p>
-              
-              {/* Pricing */}
-              <div className="bg-bg-secondary rounded-2xl p-8 max-w-md mx-auto mb-8">
-                <div className="text-3xl font-bold text-accent-blue mb-2">$1,800/month</div>
-                <div className="text-text-secondary mb-4">+ $3,000 setup fee</div>
-                <div className="text-green-600 font-semibold mb-2">Saves: $12,000/month</div>
-                <div className="text-text-muted text-sm">Replaces: 2 technical operations staff</div>
-              </div>
-              
+            <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
+              AI Hiring Assistant Bot
+            </h1>
+            <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
+              Hiring is time-consuming, inconsistent, and expensive — but it doesn't have to be. Screen resumes, conduct interviews, and recommend top candidates automatically.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://calendly.com/valeron-info/integration-call"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/25 inline-block"
+                className="btn-primary px-8 py-3 rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/25 font-semibold inline-block"
               >
                 Get Started Today
+              </a>
+              <a
+                href="/contact"
+                className="btn-secondary px-8 py-3 rounded-lg border-2 border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white transition-all duration-200 font-semibold inline-block"
+              >
+                Learn More
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-bg-secondary">
+      {/* Main Description */}
+      <section className="py-16 bg-bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-12 text-center">
-              Key Features
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="feature-card bg-bg-primary border border-border-primary rounded-xl p-6">
-                <h3 className="text-xl font-bold text-text-primary mb-4">Resume Screening</h3>
-                <p className="text-text-secondary">
-                  Automatically evaluates resumes against job requirements and ranks candidates based on qualifications.
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
+                  Hire Better, Faster, Smarter
+                </h2>
+                <p className="text-lg text-text-secondary mb-6">
+                  The AI Hiring Assistant Bot screens resumes, ranks candidates, conducts structured interviews (with voice or video), and recommends top applicants based on your specific role requirements.
+                </p>
+                <p className="text-lg text-text-secondary mb-6">
+                  You'll stop wasting time on unqualified leads and spend more time speaking to the best-fit candidates. Plus, it integrates seamlessly with your existing ATS tools like Workable, Lever, or Greenhouse.
+                </p>
+                <p className="text-lg text-text-secondary">
+                  This tool makes the hiring process faster, smarter, and bias-free. It also helps you scale up recruitment during growth phases — without paying recruiters or burning out your HR team.
                 </p>
               </div>
               
-              <div className="feature-card bg-bg-primary border border-border-primary rounded-xl p-6">
-                <h3 className="text-xl font-bold text-text-primary mb-4">AI Interviews</h3>
-                <p className="text-text-secondary">
-                  Conducts structured video interviews with natural conversation and follow-up questions.
-                </p>
-              </div>
-              
-              <div className="feature-card bg-bg-primary border border-border-primary rounded-xl p-6">
-                <h3 className="text-xl font-bold text-text-primary mb-4">Bias Reduction</h3>
-                <p className="text-text-secondary">
-                  Uses standardized criteria to evaluate candidates, reducing unconscious bias in early screening stages.
-                </p>
-              </div>
-              
-              <div className="feature-card bg-bg-primary border border-border-primary rounded-xl p-6">
-                <h3 className="text-xl font-bold text-text-primary mb-4">ATS Integration</h3>
-                <p className="text-text-secondary">
-                  Seamlessly integrates with your existing Applicant Tracking System for smooth workflow management.
-                </p>
+              <div className="bg-bg-primary rounded-2xl p-8 border border-border-primary">
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-accent-blue/10 flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-accent-blue" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-primary">Complete Hiring Pipeline</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <Shield className="w-5 h-5 text-accent-blue mr-3" />
+                    <span className="text-text-secondary">Bias-free screening</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Clock className="w-5 h-5 text-accent-blue mr-3" />
+                    <span className="text-text-secondary">Faster time-to-hire</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Target className="w-5 h-5 text-accent-blue mr-3" />
+                    <span className="text-text-secondary">ATS integrations</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ROI Section */}
-      <section className="py-20">
+      {/* Features Section */}
+      <section className="py-16">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-12">
-              Return on Investment
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
+              End-to-End Recruitment Automation
             </h2>
+            <p className="text-lg text-text-secondary">
+              From resume screening to final recommendations, handle every step of your hiring process.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-bg-secondary rounded-2xl p-6 border border-border-primary text-center">
+              <div className="w-12 h-12 rounded-full bg-accent-blue/10 flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-6 h-6 text-accent-blue" />
+              </div>
+              <h3 className="text-lg font-bold text-text-primary mb-2">Resume Screening</h3>
+              <p className="text-text-secondary">Automatically filter and rank candidates based on role requirements and qualifications.</p>
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-bg-secondary rounded-xl p-8">
-                <DollarSign className="w-12 h-12 text-accent-blue mx-auto mb-4" />
-                <div className="text-2xl font-bold text-text-primary mb-2">$12,000</div>
-                <div className="text-text-secondary">Monthly Savings</div>
+            <div className="bg-bg-secondary rounded-2xl p-6 border border-border-primary text-center">
+              <div className="w-12 h-12 rounded-full bg-accent-blue/10 flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-accent-blue" />
               </div>
-              
-              <div className="bg-bg-secondary rounded-xl p-8">
-                <TrendingUp className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <div className="text-2xl font-bold text-text-primary mb-2">60%</div>
-                <div className="text-text-secondary">Faster Hiring</div>
+              <h3 className="text-lg font-bold text-text-primary mb-2">AI Interviews</h3>
+              <p className="text-text-secondary">Conduct structured interviews with voice or video to assess candidate fit and skills.</p>
+            </div>
+            
+            <div className="bg-bg-secondary rounded-2xl p-6 border border-border-primary text-center">
+              <div className="w-12 h-12 rounded-full bg-accent-blue/10 flex items-center justify-center mx-auto mb-4">
+                <Target className="w-6 h-6 text-accent-blue" />
               </div>
-              
-              <div className="bg-bg-secondary rounded-xl p-8">
-                <Users className="w-12 h-12 text-accent-blue mx-auto mb-4" />
-                <div className="text-2xl font-bold text-text-primary mb-2">10x</div>
-                <div className="text-text-secondary">More Candidates Screened</div>
-              </div>
+              <h3 className="text-lg font-bold text-text-primary mb-2">Smart Recommendations</h3>
+              <p className="text-text-secondary">Get ranked candidate lists with detailed analysis and hiring recommendations.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-bg-secondary">
+      {/* Integration Section */}
+      <section className="py-16 bg-bg-secondary">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6">
-              Ready to Get Started?
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
+              Seamless ATS Integration
             </h2>
             <p className="text-lg text-text-secondary mb-8">
-              Schedule a consultation to see how AI Hiring Assistant Bot can streamline your recruitment.
+              Works with your existing recruitment tools and processes.
             </p>
-            <a
-              href="https://calendly.com/valeron-info/integration-call"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/25 inline-block"
-            >
-              Schedule Free Consultation
-            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-bg-primary rounded-2xl p-8 border border-border-primary text-center">
+              <h3 className="text-xl font-bold text-text-primary mb-4">Popular ATS Platforms</h3>
+              <div className="space-y-2">
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Workable</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Lever</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Greenhouse</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-bg-primary rounded-2xl p-8 border border-border-primary text-center">
+              <h3 className="text-xl font-bold text-text-primary mb-4">Key Benefits</h3>
+              <div className="space-y-2">
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Reduce bias in hiring</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Scale recruitment efforts</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Improve candidate quality</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-bg-primary rounded-2xl p-8 border border-border-primary text-center">
+              <h3 className="text-xl font-bold text-text-primary mb-4">Perfect For</h3>
+              <div className="space-y-2">
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Growing startups</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Internal HR teams</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-accent-blue mr-3" />
+                  <span className="text-sm text-text-secondary">Recruitment agencies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="bg-bg-secondary rounded-3xl p-8 border border-border-primary">
+              <div className="mb-6">
+                <div className="text-3xl font-bold text-accent-blue mb-2">$1,800/month</div>
+                <div className="text-lg text-text-secondary">+ $3,000 setup fee</div>
+              </div>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center justify-center">
+                  <TrendingUp className="w-5 h-5 text-green-600 mr-2" />
+                  <span className="text-green-600 font-medium">Saves $12,000/month</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <Users className="w-5 h-5 text-text-muted mr-2" />
+                  <span className="text-text-muted">Equivalent to 2 technical operations staff</span>
+                </div>
+              </div>
+
+              <a
+                href="https://calendly.com/valeron-info/integration-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full py-3 px-6 rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/25 font-semibold inline-block"
+              >
+                Schedule Implementation Call
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -173,7 +173,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary mb-1">Email us</h4>
-                    <p className="text-text-secondary">info@valeron.ca</p>
+                    <a href="mailto:info@valeron.ca" className="text-text-secondary hover:text-accent-blue transition-colors">info@valeron.ca</a>
                     <p className="text-text-muted text-sm mt-1">We'll respond within 24 hours</p>
                   </div>
                 </div>

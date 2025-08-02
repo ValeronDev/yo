@@ -48,12 +48,14 @@ const Hero = () => {
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button
-              onClick={scrollToContact}
-              className="btn-secondary px-8 py-4 text-lg font-semibold rounded-lg border-2 border-border-primary text-text-primary hover:border-accent-blue hover:text-accent-blue hover:bg-accent-blue/5 transition-all duration-200 hover:transform hover:-translate-y-1"
+            <a
+              href="https://calendly.com/valeron-info/integration-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary px-8 py-4 text-lg font-semibold rounded-lg border-2 border-border-primary text-text-primary hover:border-accent-blue hover:text-accent-blue hover:bg-accent-blue/5 transition-all duration-200 hover:transform hover:-translate-y-1 inline-block"
             >
               Let's Talk
-            </button>
+            </a>
           </div>
 
           {/* Stats */}

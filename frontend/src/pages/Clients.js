@@ -83,13 +83,13 @@ const Clients = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                   <div>
                     <div className="mb-6">
+                      <h2 className="text-2xl font-bold text-text-primary mb-4">
+                        {client.name}
+                      </h2>
                       <span className="inline-flex items-center px-3 py-1 rounded-full bg-accent-blue/10 text-accent-blue text-sm font-semibold mb-4">
                         {client.industry}
                       </span>
-                      <h2 className="text-2xl font-bold text-text-primary mb-2">
-                        {client.name}
-                      </h2>
-                      <h3 className="text-xl font-bold text-accent-blue mb-4">
+                      <h3 className="text-xl font-bold text-accent-blue">
                         {client.solution}
                       </h3>
                     </div>

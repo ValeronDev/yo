@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -18,39 +19,41 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img
-              src="https://customer-assets.emergentagent.com/job_897cccf0-ca73-442b-9ddf-c62916f83865/artifacts/h4l9w71y_valeron_logo.png"
-              alt="Valeron"
-              className="h-8 w-auto"
-            />
+            <Link to="/">
+              <img
+                src="https://customer-assets.emergentagent.com/job_897cccf0-ca73-442b-9ddf-c62916f83865/artifacts/h4l9w71y_valeron_logo.png"
+                alt="Valeron"
+                className="h-8 w-auto"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("what-we-do")}
+            <Link
+              to="/tools"
               className="text-text-secondary hover:text-accent-blue transition-colors duration-200"
             >
               Tools
-            </button>
-            <button
-              onClick={() => scrollToSection("bundle-save")}
+            </Link>
+            <Link
+              to="/clients"
               className="text-text-secondary hover:text-accent-blue transition-colors duration-200"
             >
-              Bundles
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
+              Clients
+            </Link>
+            <Link
+              to="/contact"
               className="text-text-secondary hover:text-accent-blue transition-colors duration-200"
             >
               Contact
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
+            </Link>
+            <Link
+              to="/contact"
               className="btn-primary px-6 py-2 text-sm font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-0.5"
             >
               Get Started
-            </button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -66,30 +69,34 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-border-primary pt-4">
             <div className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection("what-we-do")}
+              <Link
+                to="/tools"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-text-secondary hover:text-accent-blue transition-colors text-left"
               >
                 Tools
-              </button>
-              <button
-                onClick={() => scrollToSection("bundle-save")}
+              </Link>
+              <Link
+                to="/clients"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-text-secondary hover:text-accent-blue transition-colors text-left"
               >
-                Bundles
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+                Clients
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-text-secondary hover:text-accent-blue transition-colors text-left"
               >
                 Contact
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="btn-primary w-full py-3 text-sm font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200"
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
+                className="btn-primary w-full py-3 text-sm font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 text-center"
               >
                 Get Started
-              </button>
+              </Link>
             </div>
           </nav>
         )}

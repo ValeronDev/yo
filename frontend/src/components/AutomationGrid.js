@@ -164,7 +164,7 @@ const AutomationTools = () => {
         </div>
 
         {/* Bundle & Save Section */}
-        <div className="bg-bg-secondary rounded-3xl p-8 lg:p-12">
+        <div id="bundle-save" className="bg-bg-secondary rounded-3xl p-8 lg:p-12">
           <div className="text-center mb-12">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-bg-tertiary border border-border-primary mb-6">
               <Zap className="w-4 h-4 text-accent-blue mr-2" />

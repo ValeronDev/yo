@@ -237,12 +237,14 @@ const AutomationTools = () => {
             <p className="text-text-secondary mb-4">
               Need help choosing the right bundle? Our automation specialists can help.
             </p>
-            <button
-              onClick={scrollToContact}
-              className="btn-primary px-8 py-3 rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/25 font-semibold"
+            <a
+              href="https://calendly.com/valeron-info/integration-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-8 py-3 rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/25 font-semibold inline-block"
             >
               Schedule Free Consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -152,12 +152,12 @@ const AutomationTools = () => {
               </div>
 
               <div className="mt-4">
-                <button 
-                  onClick={scrollToContact}
-                  className="w-full bg-accent-blue text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-accent-blue-hover transition-colors duration-200"
+                <Link 
+                  to={tool.link}
+                  className="w-full bg-accent-blue text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-accent-blue-hover transition-colors duration-200 inline-block text-center"
                 >
                   Get Started
-                </button>
+                </Link>
               </div>
             </div>
           ))}

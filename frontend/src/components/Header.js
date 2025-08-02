@@ -48,12 +48,14 @@ const Header = () => {
             >
               Contact
             </Link>
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/valeron-info/integration-call"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary px-6 py-2 text-sm font-semibold rounded-lg bg-accent-blue text-white hover:bg-accent-blue-hover transition-all duration-200 hover:transform hover:-translate-y-0.5"
             >
               Get Started
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}

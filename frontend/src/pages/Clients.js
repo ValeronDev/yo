@@ -11,10 +11,9 @@ const Clients = () => {
 
   const clients = [
     {
-      name: "Payflow",
-      industry: "HR & Recruitment",
+      name: "PayFlow Systems",
+      industry: "Financial Services",
       solution: "AI Hiring Assistant Bot",
-      logo: "https://via.placeholder.com/200x80/3B82F6/ffffff?text=Payflow",
       challenge: "Manual resume screening was taking 40+ hours per week for their growing team",
       solution_description: "Automated resume screening and initial candidate interviews",
       results: [
@@ -26,9 +25,8 @@ const Clients = () => {
     },
     {
       name: "Expensif World",
-      industry: "Financial Services",
+      industry: "Marketing Services",
       solution: "SOP Answer Bot",
-      logo: "https://via.placeholder.com/200x80/3B82F6/ffffff?text=Expensif+World",
       challenge: "Customer service team was overwhelmed with repetitive process questions",
       solution_description: "24/7 internal SOP guidance system for customer support team",
       results: [
@@ -42,7 +40,6 @@ const Clients = () => {
       name: "Prime Closing",
       industry: "Real Estate",
       solution: "AI Sales Call Review Bot",
-      logo: "https://via.placeholder.com/200x80/3B82F6/ffffff?text=Prime+Closing",
       challenge: "Sales managers couldn't review and coach on all team calls effectively",
       solution_description: "Automated call analysis and personalized coaching for every sales interaction",
       results: [

@@ -23,7 +23,8 @@ const AutomationTools = () => {
       description: "Provides employees with real-time answers to operational questions by referencing your internal SOPs. Reduces manager interruptions, speeds up onboarding, and ensures compliance across departments.",
       pricing: "$200/month + $400 setup fee",
       averageSavings: "$2,000/month",
-      equivalentStaff: "1 operations manager"
+      equivalentStaff: "1 operations manager",
+      link: "/sop-bot"
     },
     {
       icon: <Bot className="w-8 h-8 text-accent-blue" />,
@@ -32,7 +33,8 @@ const AutomationTools = () => {
       description: "Generates blogs, social posts, emails, product copy. Matches brand tone. SEO-optimized, multi-language.",
       pricing: "$1,500/month + $2,500 setup fee",
       averageSavings: "$10,000/month",
-      equivalentStaff: "2 copywriters"
+      equivalentStaff: "2 copywriters",
+      link: "/content-creation-bot"
     },
     {
       icon: <MessageSquare className="w-8 h-8 text-accent-blue" />,
@@ -41,7 +43,8 @@ const AutomationTools = () => {
       description: "Handles live chat, email, and voice calls with a natural-sounding AI agent. Provides instant, branded support 24/7 — even on holidays and weekends.",
       pricing: "$2,500/month + $5,000 setup fee",
       averageSavings: "$15,000/month",
-      equivalentStaff: "3 support agents"
+      equivalentStaff: "3 support agents",
+      link: "/customer-service-bot"
     },
     {
       icon: <Phone className="w-8 h-8 text-accent-blue" />,
@@ -50,16 +53,18 @@ const AutomationTools = () => {
       description: "Automatically reviews Zoom/Meet calls, summarizes objections, key points, and gives performance coaching on tone, pacing, filler words, and more.",
       pricing: "$1,500/month + $2,400 setup fee",
       averageSavings: "$9,000/month",
-      equivalentStaff: "1 sales ops analyst"
+      equivalentStaff: "1 sales ops analyst",
+      link: "/sales-call-review-bot"
     },
     {
-      icon: <Link className="w-8 h-8 text-accent-blue" />,
+      icon: <LinkIcon className="w-8 h-8 text-accent-blue" />,
       title: "AI Hiring Assistant Bot",
       targetAudience: "HR teams, recruiters, growing startups",
       description: "Screens resumes, conducts AI interviews, scores candidates, and recommends top fits — all integrated into your ATS. Greatly reduces time-to-hire and bias in early-stage screening.",
       pricing: "$1,800/month + $3,000 setup fee",
       averageSavings: "$12,000/month",
-      equivalentStaff: "2 technical operations staff"
+      equivalentStaff: "2 technical operations staff",
+      link: "/hiring-assistant-bot"
     },
     {
       icon: <Building2 className="w-8 h-8 text-accent-blue" />,
@@ -68,7 +73,8 @@ const AutomationTools = () => {
       description: "Built-to-spec AI agents and workflow systems. Bespoke UI, logic, and integrations. Dedicated support team.",
       pricing: "Custom Quote",
       averageSavings: "Varies",
-      equivalentStaff: "Flexible per scope"
+      equivalentStaff: "Flexible per scope",
+      link: "/enterprise-projects"
     }
   ];
 

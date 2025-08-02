@@ -46,7 +46,7 @@ const AutomationTools = () => {
       icon: <Phone className="w-8 h-8 text-accent-blue" />,
       title: "AI Sales Call Review Bot",
       targetAudience: "Sales teams, call centers, B2B, real estate, insurance",
-      description: "Transcribes & summarizes calls. Detects objections, buying signals, competitors. Scores performance, syncs with HubSpot, Salesforce.",
+      description: "Automatically reviews Zoom/Meet calls, summarizes objections, key points, and gives performance coaching on tone, pacing, filler words, and more.",
       pricing: "$1,500/month + $2,400 setup fee",
       averageSavings: "$9,000/month",
       equivalentStaff: "1 sales ops analyst"

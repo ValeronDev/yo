@@ -35,9 +35,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#automations" className="text-text-secondary hover:text-accent-blue transition-colors text-sm">
+                <Link to="/enterprise-projects" className="text-text-secondary hover:text-accent-blue transition-colors text-sm">
                   Custom Solutions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

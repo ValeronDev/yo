@@ -23,27 +23,6 @@ const Footer = () => {
               Built for creators, startups, and teams who want to scale efficiently.
             </p>
             
-            {/* Social Links */}
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="footer-social-link w-10 h-10 rounded-lg bg-dark-tertiary flex items-center justify-center text-text-muted hover:bg-accent-blue hover:text-white hover:transform hover:-translate-y-1 transition-all duration-200"
-              >
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="footer-social-link w-10 h-10 rounded-lg bg-dark-tertiary flex items-center justify-center text-text-muted hover:bg-accent-blue hover:text-white hover:transform hover:-translate-y-1 transition-all duration-200"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="footer-social-link w-10 h-10 rounded-lg bg-dark-tertiary flex items-center justify-center text-text-muted hover:bg-accent-blue hover:text-white hover:transform hover:-translate-y-1 transition-all duration-200"
-              >
-                <Github className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Services */}

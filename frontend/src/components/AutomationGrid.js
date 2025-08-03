@@ -18,7 +18,7 @@ const AutomationTools = () => {
   const tools = [
     {
       icon: <FileText className="w-8 h-8 text-accent-blue" />,
-      title: "SOP Bot",
+      title: "SOP System",
       targetAudience: "Operations teams, process-heavy businesses, scaling startups",
       description: "Provides employees with real-time answers to operational questions by referencing your internal SOPs. Reduces manager interruptions, speeds up onboarding, and ensures compliance across departments.",
       pricing: "$200/month + $400 setup fee",

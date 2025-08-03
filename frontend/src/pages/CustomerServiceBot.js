@@ -23,7 +23,7 @@ const CustomerServiceBot = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-              AI Customer Service Bot (With Voice)
+              AI Customer Service System (With Voice)
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
               This isn't just another chatbot — it's a full-service, AI-powered support agent that communicates over email, DMs, live chat, and even voice calls using a natural-sounding AI voice.

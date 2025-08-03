@@ -13,7 +13,7 @@ const Clients = () => {
     {
       name: "PayFlow Systems",
       industry: "Financial Services",
-      solution: "AI Hiring Assistant System",
+      solution: "AI Hiring Assistant",
       challenge: "Manual resume screening was taking 40+ hours per week for their growing team",
       solution_description: "Automated resume screening and initial candidate interviews",
       results: [

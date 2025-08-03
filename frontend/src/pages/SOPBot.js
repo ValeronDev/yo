@@ -59,10 +59,10 @@ const SOPBot = () => {
                   Stop the Endless Questions
                 </h2>
                 <p className="text-lg text-text-secondary mb-6">
-                  Instead of digging through folders, pinging managers, or guessing the next step, employees can now ask the bot a question in natural language and get precise, actionable guidance based on your company's own SOPs.
+                  Instead of digging through folders, pinging managers, or guessing the next step, employees can now ask the system a question in natural language and get precise, actionable guidance based on your company's own SOPs.
                 </p>
                 <p className="text-lg text-text-secondary mb-6">
-                  Whether it's "What do I do if a shipment is delayed?" or "How do I handle a refund request?", the bot understands the context and delivers a step-by-step process — tailored to your workflow.
+                  Whether it's "What do I do if a shipment is delayed?" or "How do I handle a refund request?", the system understands the context and delivers a step-by-step process — tailored to your workflow.
                 </p>
                 <p className="text-lg text-text-secondary">
                   It's like having your best operations manager on-call 24/7, minus the interruptions.

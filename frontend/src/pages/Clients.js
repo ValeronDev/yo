@@ -39,7 +39,7 @@ const Clients = () => {
     {
       name: "Prime Closing",
       industry: "Real Estate",
-      solution: "AI Sales Call Review Bot",
+      solution: "AI Sales Call Review System",
       challenge: "Sales managers couldn't review and coach on all team calls effectively",
       solution_description: "Automated call analysis and personalized coaching for every sales interaction",
       results: [

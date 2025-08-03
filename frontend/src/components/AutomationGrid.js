@@ -28,7 +28,7 @@ const AutomationTools = () => {
     },
     {
       icon: <Bot className="w-8 h-8 text-accent-blue" />,
-      title: "AI Content Creation Bot",
+      title: "AI Content Creation System",
       targetAudience: "Marketing teams, content agencies, e-comm & SaaS",
       description: "Generates blogs, social posts, emails, product copy. Matches brand tone. SEO-optimized, multi-language.",
       pricing: "$1,500/month + $2,500 setup fee",

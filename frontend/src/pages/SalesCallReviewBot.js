@@ -23,7 +23,7 @@ const SalesCallReviewBot = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-              AI Sales Call Review Bot
+              AI Sales Call Review System
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
               Imagine if every sales call your team made came with a detailed summary, performance breakdown, and personalized coaching advice — instantly.

@@ -23,7 +23,7 @@ const HiringAssistantBot = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-              AI Hiring Assistant Bot
+              AI Hiring Assistant System
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
               Hiring is time-consuming, inconsistent, and expensive — but it doesn't have to be. Screen resumes, conduct interviews, and recommend top candidates automatically.

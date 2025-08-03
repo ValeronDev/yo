@@ -59,7 +59,7 @@ const HiringAssistantBot = () => {
                   Hire Better, Faster, Smarter
                 </h2>
                 <p className="text-lg text-text-secondary mb-6">
-                  The AI Hiring Assistant System screens resumes, ranks candidates, conducts structured interviews (with voice or video), and recommends top applicants based on your specific role requirements.
+                  The AI Hiring Assistant screens resumes, ranks candidates, conducts structured interviews (with voice or video), and recommends top applicants based on your specific role requirements.
                 </p>
                 <p className="text-lg text-text-secondary mb-6">
                   You'll stop wasting time on unqualified leads and spend more time speaking to the best-fit candidates. Plus, it integrates seamlessly with your existing ATS tools like Workable, Lever, or Greenhouse.

@@ -58,7 +58,7 @@ const AutomationTools = () => {
     },
     {
       icon: <LinkIcon className="w-8 h-8 text-accent-blue" />,
-      title: "AI Hiring Assistant Bot",
+      title: "AI Hiring Assistant System",
       targetAudience: "HR teams, recruiters, growing startups",
       description: "Screens resumes, conducts AI interviews, scores candidates, and recommends top fits — all integrated into your ATS. Greatly reduces time-to-hire and bias in early-stage screening.",
       pricing: "$1,800/month + $3,000 setup fee",

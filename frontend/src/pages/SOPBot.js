@@ -23,7 +23,7 @@ const SOPBot = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">
-              SOP Answer System
+              SOP System
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
               Your team's internal GPS — always available, always accurate. Get precise, actionable guidance based on your company's own SOPs.

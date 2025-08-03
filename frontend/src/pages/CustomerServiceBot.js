@@ -59,7 +59,7 @@ const CustomerServiceBot = () => {
                   Never Miss a Customer Again
                 </h2>
                 <p className="text-lg text-text-secondary mb-6">
-                  Customers don't want to wait. Whether it's a refund question at midnight or a booking inquiry on the weekend, the AI Customer Service Bot is available 24/7 to give fast, polite, and helpful responses in your brand tone.
+                  Customers don't want to wait. Whether it's a refund question at midnight or a booking inquiry on the weekend, the AI Customer Service System is available 24/7 to give fast, polite, and helpful responses in your brand tone.
                 </p>
                 <p className="text-lg text-text-secondary mb-6">
                   Voice support makes your business feel more personal and professional — especially for service-based or high-touch brands. No more missing leads or overloading your support team during launches, promos, or peak seasons.

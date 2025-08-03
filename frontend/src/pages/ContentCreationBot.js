@@ -62,7 +62,7 @@ const ContentCreationBot = () => {
                   It's fully trained on your tone, voice, shot list preferences, editing style, and even preferred camera angles for visual content briefs.
                 </p>
                 <p className="text-lg text-text-secondary mb-6">
-                  Whether you're a solo founder, a lean marketing team, or an agency juggling multiple brands, this bot helps you generate on-brand, SEO-optimized content at scale — without hiring extra writers or coordinators.
+                  Whether you're a solo founder, a lean marketing team, or an agency juggling multiple brands, this system helps you generate on-brand, SEO-optimized content at scale — without hiring extra writers or coordinators.
                 </p>
                 <p className="text-lg text-text-secondary">
                   Use calendar-based automation to batch, schedule, and deploy campaigns in advance — streamlining production and eliminating deadline stress.

@@ -26,7 +26,7 @@ const Clients = () => {
     {
       name: "Expensif World",
       industry: "Marketing Services",
-      solution: "SOP Answer Bot",
+      solution: "SOP Answer System",
       challenge: "Customer service team was overwhelmed with repetitive process questions",
       solution_description: "24/7 internal SOP guidance system for customer support team",
       results: [

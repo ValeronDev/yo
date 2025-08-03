@@ -38,7 +38,7 @@ const AutomationTools = () => {
     },
     {
       icon: <MessageSquare className="w-8 h-8 text-accent-blue" />,
-      title: "AI Customer Service Bot",
+      title: "AI Customer Service System",
       targetAudience: "eCommerce, SaaS, support-heavy businesses",
       description: "Handles live chat, email, and voice calls with a natural-sounding AI agent. Provides instant, branded support 24/7 — even on holidays and weekends.",
       pricing: "$2,500/month + $5,000 setup fee",

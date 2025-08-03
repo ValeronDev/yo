@@ -87,7 +87,7 @@ const AutomationTools = () => {
     },
     {
       title: "All 5 Automations",
-      price: "$6,500/month + $11,000 setup",
+      price: "$6,000/month + $10,500 setup",
       savings: "Save 25% vs individual pricing",
       features: ["All automation tools", "Dedicated success manager", "Custom integrations included"],
       popular: true

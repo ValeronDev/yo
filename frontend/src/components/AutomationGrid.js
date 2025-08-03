@@ -48,7 +48,7 @@ const AutomationTools = () => {
     },
     {
       icon: <Phone className="w-8 h-8 text-accent-blue" />,
-      title: "AI Sales Call Review Bot",
+      title: "AI Sales Call Review System",
       targetAudience: "Sales teams, call centers, B2B, real estate, insurance",
       description: "Automatically reviews Zoom/Meet calls, summarizes objections, key points, and gives performance coaching on tone, pacing, filler words, and more.",
       pricing: "$1,500/month + $2,400 setup fee",

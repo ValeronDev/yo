@@ -126,6 +126,13 @@ const AutomationTools = () => {
               {/* Top accent bar */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-accent-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
+              {/* Coming Soon Banner */}
+              {tool.comingSoon && (
+                <div className="absolute top-4 right-4 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold z-10">
+                  Coming Soon
+                </div>
+              )}
+              
               <div className="mb-6">
                 <div className="w-12 h-12 rounded-lg bg-bg-tertiary flex items-center justify-center mb-4 group-hover:bg-accent-blue/10 transition-colors duration-300">
                   {tool.icon}
@@ -158,12 +165,21 @@ const AutomationTools = () => {
               </div>
 
               <div className="mt-4">
-                <Link 
-                  to={tool.link}
-                  className="w-full bg-accent-blue text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-accent-blue-hover transition-colors duration-200 inline-block text-center"
-                >
-                  More Info
-                </Link>
+                {tool.comingSoon ? (
+                  <button
+                    disabled
+                    className="w-full bg-gray-400 text-white py-2 px-4 rounded-lg text-sm font-semibold cursor-not-allowed opacity-75 text-center"
+                  >
+                    Coming Soon
+                  </button>
+                ) : (
+                  <Link 
+                    to={tool.link}
+                    className="w-full bg-accent-blue text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-accent-blue-hover transition-colors duration-200 inline-block text-center"
+                  >
+                    More Info
+                  </Link>
+                )}
               </div>
             </div>
           ))}

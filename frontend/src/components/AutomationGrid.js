@@ -17,36 +17,6 @@ import {
 const AutomationTools = () => {
   const tools = [
     {
-      icon: <FileText className="w-8 h-8 text-accent-blue" />,
-      title: "SOP System",
-      targetAudience: "Operations teams, process-heavy businesses, scaling startups",
-      description: "Provides employees with real-time answers to operational questions by referencing your internal SOPs. Reduces manager interruptions, speeds up onboarding, and ensures compliance across departments.",
-      pricing: "$200/month + $400 setup fee",
-      averageSavings: "$2,000/month",
-      equivalentStaff: "1 operations manager",
-      link: "/sop-bot"
-    },
-    {
-      icon: <Bot className="w-8 h-8 text-accent-blue" />,
-      title: "AI Content Creation System",
-      targetAudience: "Marketing teams, content agencies, e-comm & SaaS",
-      description: "Generates blogs, social posts, emails, product copy. Matches brand tone. SEO-optimized, multi-language.",
-      pricing: "$1,500/month + $2,500 setup fee",
-      averageSavings: "$10,000/month",
-      equivalentStaff: "2 copywriters",
-      link: "/content-creation-bot"
-    },
-    {
-      icon: <MessageSquare className="w-8 h-8 text-accent-blue" />,
-      title: "AI Customer Service System",
-      targetAudience: "eCommerce, SaaS, support-heavy businesses",
-      description: "Handles live chat, email, and voice calls with a natural-sounding AI agent. Provides instant, branded support 24/7 — even on holidays and weekends.",
-      pricing: "$2,500/month + $5,000 setup fee",
-      averageSavings: "$15,000/month",
-      equivalentStaff: "3 support agents",
-      link: "/customer-service-bot"
-    },
-    {
       icon: <Phone className="w-8 h-8 text-accent-blue" />,
       title: "AI Sales Call Review System",
       targetAudience: "Sales teams, call centers, B2B, real estate, insurance",
@@ -54,7 +24,19 @@ const AutomationTools = () => {
       pricing: "$3,500/month + $5,500 setup fee",
       averageSavings: "$15,000/month",
       equivalentStaff: "1 sales ops analyst",
-      link: "/sales-call-review-bot"
+      link: "/sales-call-review-bot",
+      comingSoon: false
+    },
+    {
+      icon: <FileText className="w-8 h-8 text-accent-blue" />,
+      title: "SOP System",
+      targetAudience: "Operations teams, process-heavy businesses, scaling startups",
+      description: "Provides employees with real-time answers to operational questions by referencing your internal SOPs. Reduces manager interruptions, speeds up onboarding, and ensures compliance across departments.",
+      pricing: "$200/month + $400 setup fee",
+      averageSavings: "$2,000/month",
+      equivalentStaff: "1 operations manager",
+      link: "/sop-bot",
+      comingSoon: false
     },
     {
       icon: <LinkIcon className="w-8 h-8 text-accent-blue" />,
@@ -64,7 +46,30 @@ const AutomationTools = () => {
       pricing: "$1,800/month + $3,000 setup fee",
       averageSavings: "$12,000/month",
       equivalentStaff: "2 technical operations staff",
-      link: "/hiring-assistant-bot"
+      link: "/hiring-assistant-bot",
+      comingSoon: false
+    },
+    {
+      icon: <Bot className="w-8 h-8 text-accent-blue" />,
+      title: "AI Content Creation System",
+      targetAudience: "Marketing teams, content agencies, e-comm & SaaS",
+      description: "Generates blogs, social posts, emails, product copy. Matches brand tone. SEO-optimized, multi-language.",
+      pricing: "$1,500/month + $2,500 setup fee",
+      averageSavings: "$10,000/month",
+      equivalentStaff: "2 copywriters",
+      link: "/content-creation-bot",
+      comingSoon: true
+    },
+    {
+      icon: <MessageSquare className="w-8 h-8 text-accent-blue" />,
+      title: "AI Customer Service System",
+      targetAudience: "eCommerce, SaaS, support-heavy businesses",
+      description: "Handles live chat, email, and voice calls with a natural-sounding AI agent. Provides instant, branded support 24/7 — even on holidays and weekends.",
+      pricing: "$2,500/month + $5,000 setup fee",
+      averageSavings: "$15,000/month",
+      equivalentStaff: "3 support agents",
+      link: "/customer-service-bot",
+      comingSoon: true
     },
     {
       icon: <Building2 className="w-8 h-8 text-accent-blue" />,
@@ -74,7 +79,8 @@ const AutomationTools = () => {
       pricing: "Custom Quote",
       averageSavings: "Varies",
       equivalentStaff: "Flexible per scope",
-      link: "/enterprise-projects"
+      link: "/enterprise-projects",
+      comingSoon: true
     }
   ];
 

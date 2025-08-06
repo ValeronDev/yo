@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img
-                src="https://customer-assets.emergentagent.com/job_897cccf0-ca73-442b-9ddf-c62916f83865/artifacts/h4l9w71y_valeron_logo.png"
+                src="https://customer-assets.emergentagent.com/job_valeron-marketing/artifacts/9ay1fzjj_output-onlinepngtools%20%287%29.png"
                 alt="Valeron"
                 className="h-8 w-auto"
               />

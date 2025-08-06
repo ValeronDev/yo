@@ -229,7 +229,7 @@ const SalesCallReviewBot = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-green-600 mr-2" />
-                  <span className="text-green-600 font-medium">Saves $9,000/month</span>
+                  <span className="text-green-600 font-medium">Saves $15,000/month</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <Users className="w-5 h-5 text-text-muted mr-2" />

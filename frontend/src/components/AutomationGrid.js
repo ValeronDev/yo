@@ -80,7 +80,7 @@ const AutomationTools = () => {
       averageSavings: "Varies",
       equivalentStaff: "Flexible per scope",
       link: "/enterprise-projects",
-      comingSoon: true
+      comingSoon: false
     }
   ];
 

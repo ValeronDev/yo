@@ -222,8 +222,8 @@ const SalesCallReviewBot = () => {
           <div className="max-w-2xl mx-auto text-center">
             <div className="bg-bg-secondary rounded-3xl p-8 border border-border-primary">
               <div className="mb-6">
-                <div className="text-3xl font-bold text-accent-blue mb-2">$1,500/month</div>
-                <div className="text-lg text-text-secondary">+ $2,400 setup fee</div>
+                <div className="text-3xl font-bold text-accent-blue mb-2">$3,500/month</div>
+                <div className="text-lg text-text-secondary">+ $5,500 setup fee</div>
               </div>
               
               <div className="space-y-4 mb-8">

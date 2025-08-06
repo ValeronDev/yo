@@ -15,7 +15,7 @@ const Footer = () => {
               <img
                 src="https://customer-assets.emergentagent.com/job_valeron-marketing/artifacts/9ay1fzjj_output-onlinepngtools%20%287%29.png"
                 alt="Valeron"
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-text-secondary mb-6 max-w-md leading-relaxed">

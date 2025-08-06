@@ -51,7 +51,7 @@ const AutomationTools = () => {
       title: "AI Sales Call Review System",
       targetAudience: "Sales teams, call centers, B2B, real estate, insurance",
       description: "Automatically reviews Zoom/Meet calls, summarizes objections, key points, and gives performance coaching on tone, pacing, filler words, and more.",
-      pricing: "$1,500/month + $2,400 setup fee",
+      pricing: "$3,500/month + $5,500 setup fee",
       averageSavings: "$9,000/month",
       equivalentStaff: "1 sales ops analyst",
       link: "/sales-call-review-bot"

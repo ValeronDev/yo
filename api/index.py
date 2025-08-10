@@ -1,74 +1,98 @@
-from fastapi import FastAPI, APIRouter
-from starlette.middleware.cors import CORSMiddleware
-from motor.motor_asyncio import AsyncIOMotorClient
+from http.server import BaseHTTPRequestHandler
+import json
 import os
-import logging
-from pydantic import BaseModel, Field
-from typing import List
-import uuid
-from datetime import datetime
+from urllib.parse import urlparse, parse_qs
 
-# Create the main app
-app = FastAPI()
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        # Set CORS headers
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', '*')
+        self.end_headers()
+        
+        # Parse the URL
+        parsed_url = urlparse(self.path)
+        path = parsed_url.path
+        
+        # Route handling
+        if path == '/' or path == '/api' or path == '/api/':
+            response = {
+                "message": "Hello World", 
+                "status": "API working",
+                "endpoints": ["/", "/status"]
+            }
+        elif path == '/status' or path == '/api/status':
+            # Mock status data for testing
+            response = [
+                {
+                    "id": "test-123", 
+                    "client_name": "Test Client",
+                    "timestamp": "2025-01-09T12:00:00Z"
+                },
+                {
+                    "id": "test-456",
+                    "client_name": "Another Client", 
+                    "timestamp": "2025-01-09T11:30:00Z"
+                }
+            ]
+        else:
+            response = {
+                "error": "Not Found",
+                "path": path,
+                "available_endpoints": ["/", "/status"]
+            }
+        
+        # Send response
+        self.wfile.write(json.dumps(response, indent=2).encode())
 
-# MongoDB connection
-mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
-db_name = os.environ.get('DB_NAME', 'test_database')
+    def do_POST(self):
+        # Set CORS headers
+        self.send_response(201)
+        self.send_header('Content-Type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', '*')
+        self.end_headers()
+        
+        # Parse the URL
+        parsed_url = urlparse(self.path)
+        path = parsed_url.path
+        
+        if path == '/status' or path == '/api/status':
+            try:
+                # Read POST data
+                content_length = int(self.headers.get('Content-Length', 0))
+                post_data = self.rfile.read(content_length).decode('utf-8')
+                data = json.loads(post_data)
+                
+                # Create response
+                response = {
+                    "id": "new-789",
+                    "client_name": data.get("client_name", "Unknown"),
+                    "timestamp": "2025-01-09T12:00:00Z",
+                    "status": "created"
+                }
+            except Exception as e:
+                response = {
+                    "error": "Invalid JSON or missing data",
+                    "details": str(e)
+                }
+        else:
+            response = {
+                "error": "POST not supported for this endpoint",
+                "path": path
+            }
+        
+        # Send response
+        self.wfile.write(json.dumps(response, indent=2).encode())
 
-# Global MongoDB client
-client = None
-db = None
-
-def get_database():
-    global client, db
-    if client is None:
-        client = AsyncIOMotorClient(mongo_url)
-        db = client[db_name]
-    return db
-
-# Define Models
-class StatusCheck(BaseModel):
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    client_name: str
-    timestamp: datetime = Field(default_factory=datetime.utcnow)
-
-class StatusCheckCreate(BaseModel):
-    client_name: str
-
-# Add routes directly to app (no /api prefix needed as Vercel handles routing)
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-@app.post("/status", response_model=StatusCheck)
-async def create_status_check(input: StatusCheckCreate):
-    db = get_database()
-    status_dict = input.dict()
-    status_obj = StatusCheck(**status_dict)
-    _ = await db.status_checks.insert_one(status_obj.dict())
-    return status_obj
-
-@app.get("/status", response_model=List[StatusCheck])
-async def get_status_checks():
-    db = get_database()
-    status_checks = await db.status_checks.find().to_list(1000)
-    return [StatusCheck(**status_check) for status_check in status_checks]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_credentials=True,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
-
-# Vercel serverless function handler
-def handler(request, response):
-    return app
+    def do_OPTIONS(self):
+        # Handle CORS preflight requests
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', '*')
+        self.end_headers()

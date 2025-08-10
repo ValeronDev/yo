@@ -4,8 +4,8 @@
     { "src": "api/index.py", "use": "@vercel/python" },
     { "src": "frontend/package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
   ],
-  "routes": [
-    { "src": "^/api/(.*)$", "dest": "/api/index.py" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
